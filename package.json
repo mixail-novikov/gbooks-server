@@ -1,0 +1,26 @@
+{
+  "name": "gbooks-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec ts-node ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/ws": "^5.1.2",
+    "nodemon": "^1.18.3",
+    "ts-node": "^7.0.0",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.14.0",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "graphql-yoga": "^1.15.1",
+    "merge-graphql-schemas": "^1.5.3"
+  }
+}
