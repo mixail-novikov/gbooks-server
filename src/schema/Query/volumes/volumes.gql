@@ -1,0 +1,10 @@
+# import Book from "../../types/Book.gql"
+
+type VolumeResponse {
+  totalItems: Int
+  items: [Book]
+}
+
+type Query {
+  volumes(q: String!, filter: String, orderBy: String, printType: String): VolumeResponse
+}
