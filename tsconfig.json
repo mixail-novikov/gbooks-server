@@ -10,13 +10,10 @@
         "outDir": "dist",
         "baseUrl": "./",
         "paths": {
-            "@/*": [
-                "./*"
-            ],
             "*": [
                 "node_modules/*",
                 "types/*"
-            ],
+            ]
         },
         "lib": [
             "dom",
@@ -25,8 +22,7 @@
         ]
     },
     "include": [
-        "src/**/*.ts",
-        "env/**/*.ts"
+        "src/**/*.ts"
     ],
     "exclude": [
         "node_modules",

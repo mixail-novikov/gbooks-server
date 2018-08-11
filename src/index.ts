@@ -1,6 +1,7 @@
-import env from "@/env";
 import axios from "axios";
 import { GraphQLServer } from "graphql-yoga";
+
+import env from "./env";
 import schema from "./schema";
 
 const server = new GraphQLServer({
