@@ -8,12 +8,15 @@
         "moduleResolution": "node",
         "sourceMap": true,
         "outDir": "dist",
-        "baseUrl": ".",
+        "baseUrl": "./",
         "paths": {
+            "@/*": [
+                "./*"
+            ],
             "*": [
                 "node_modules/*",
                 "types/*"
-            ]
+            ],
         },
         "lib": [
             "dom",
@@ -22,7 +25,8 @@
         ]
     },
     "include": [
-        "src/**/*.ts"
+        "src/**/*.ts",
+        "env/**/*.ts"
     ],
     "exclude": [
         "node_modules",
