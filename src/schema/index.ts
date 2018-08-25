@@ -9,6 +9,6 @@ const resolversArray = fileLoader(path.join(__dirname, "**/*.resolver.ts"));
 const resolvers = mergeResolvers(resolversArray, { all: true });
 
 export default makeExecutableSchema({
-    typeDefs,
-    resolvers,
-})
+  typeDefs,
+  resolvers
+});

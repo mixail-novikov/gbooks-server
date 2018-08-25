@@ -12,12 +12,9 @@ const server = new GraphQLServer({
 });
 
 const serverOptions = {
-  port: env('PORT')
+  port: env("PORT")
 };
 
-server.start(
-  serverOptions,
-  () => {
-    console.log(`Server is running on localhost:${serverOptions.port}`);
-  }
-);
+server.start(serverOptions, () => {
+  console.log(`Server is running on localhost:${serverOptions.port}`);
+});

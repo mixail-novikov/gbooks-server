@@ -1,6 +1,6 @@
 // env
 import nconf from "nconf";
-import path from 'path';
+import path from "path";
 
 nconf.env();
 nconf.file("environment", resolveEnvFile(`.env.${nodeEnv()}.json`));
