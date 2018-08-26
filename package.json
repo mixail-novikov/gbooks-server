@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "nodemon --exec ts-node ./src/index.ts",
+    "start": "nodemon --ext ts,gql --exec ts-node ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "pretty-quick --staged"
   },
@@ -31,6 +31,7 @@
     "graphql-tools": "^3.1.1",
     "graphql-yoga": "^1.15.1",
     "merge-graphql-schemas": "^1.5.3",
+    "moment": "^2.22.2",
     "nconf": "^0.10.0"
   }
 }

@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export default {
   Book: {
     title(obj: any) {
@@ -23,6 +25,10 @@ export default {
       return isbn
         ? `https://books.google.com/books?isbn=${isbn}`
         : `https://books.google.com/books?id=${id}`;
+    },
+    date(obj: any, args: any) {
+      const date = moment(obj.volumeInfo.publishedDate, "YYYY-MM-DD");
+      return date.format(args.format);
     }
   }
 };
